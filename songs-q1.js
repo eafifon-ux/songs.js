@@ -1,21 +1,9 @@
-/* songs-q1.js */
+/* songs-q1.js — ALL Q1 in this one file. More days get added here, not new files. */
 window.SONGS_Q1 = window.SONGS_Q1 || {};
 Object.assign(window.SONGS_Q1, {
-"1":{
-  "quoteEn":"Nature allows every person to cope with their fate.",
-  "quoteHi":"प्रकृति हर इंसान को अपने भाग्य का सामना करने की ताकत देती है।",
-  "quoteHe":"הטבע מאפשר לכל אדם להתמודד עם גורלו.",
-  "heVideo":"https://www.youtube.com/watch?v=zVi8AI9Yl6k",
-  "heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%9E%D7%90%D7%9C%D7%94-%D7%95%D7%90%D7%91%D7%90%D7%9C%D7%94-imale-veabale-dear-mommy-dear-papa.html",
-  "heLyricsEn":"Dear Mommy, Dear Papa\nRomanians, Tunisians\nYemenites and Moroccans\nIt does not matter what the ethnic group is\nThose who come say thank you\nFrom Poland and from Caucasia\nTonight no one sits still\nAge does not matter at all\nThe main thing is the dance\nNo cash is needed here\nEveryone move your hips\nMillionaire and pauper\nWhat a great night\nDear Mommy, Dear Papa\nHow the place is filling up",
-  "heLyricsHe":"אמאל'ה ואבאל'ה\nרומנים טוניסאים\nתימנים ומרוקאים\nלא חשוב מה העדה\nמי שבא נאמר תודה\nמפולין ומקווקז\nהלילה אף אחד לא זז\nלא חשוב בכלל הגיל\nהעיקר זה התרגיל\nלא צריך כאן מזומן\nכולם תזיזו את האגן\nמיליונר וגם תפרן\nאיזה לילה פאנן\nאמאל'ה ואבאל'ה\nאיך המקום מתמלא",
-  "heLyricsHi":"प्यारी माँ, प्यारे पापा\nरोमानियाई, ट्यूनीशियाई\nयमनी और मोरक्कन\nजाति कोई मायने नहीं रखती\nजो आए धन्यवाद कहें\nपोलैंड और कॉकेशस से\nआज रात कोई नहीं बैठता\nउम्र कोई मायने नहीं\nमुख्य बात है नाच\nयहाँ नकदी की ज़रूरत नहीं\nसब कमर हिलाओ\nअमीर और गरीब\nक्या शानदार रात है\nप्यारी माँ, प्यारे पापा\nकैसे जगह भर रही है",
-  "hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28",
-  "hiLyrics":"https://lyricstranslate.com/en/lag-ja-gale-embrace-me.html",
-  "hiLyricsEn":"Embrace me, dear — who knows if this beautiful night will come again\nPerhaps we may never meet again in this life\nFate has given us these few moments\nLook at me up close, as much as you wish\nYour fate may never have this chance again\nCome closer — I will not return again and again\nLet me wrap my arms around you and cry\nMy eyes may never shed such a shower of love again\nEmbrace me, for this beautiful evening may not come again",
-  "hiLyricsHi":"लग जा गले कि फिर ये हसीं रात हो न हो\nशायद फिर इस जनम में मुलाकात हो न हो\nहमको मिली हैं आज ये घड़ियाँ नसीब से\nजी भर के देख लीजिये हमको क़रीब से\nफिर आपके नसीब में ये बात हो न हो\nपास आइये कि हम नहीं आएंगे बार-बार\nबाहें गले में डाल के हम रो लें ज़ार-ज़ार\nआँखों से फिर ये प्यार कि बरसात हो न हो\nलग जा गले कि फिर ये हसीं रात हो न हो",
-  "hiLyricsHe":"היצמדי אלי, יקרה — מי יודע אם הלילה היפה הזה ישוב\nאולי לא ניפגש שוב בחיים האלה\nהגורל נתן לנו את הרגעים האלה\nהסתכלי בי מקרוב ככל שתרצי\nייתכן שההזדמנות הזו לא תחזור\nבואי קרוב — לא אשוב שוב ושוב\nתני לי לחבק אותך ולבכות\nייתכן שעיני לא ישפכו שוב גשם כזה של אהבה\nהיצמדי אלי, כי ערב יפה זה אולי לא ישוב"
-},
-"15":{"quoteEn":"Despite a broken heart, people keep going.","quoteHi":"टूटे हुए दिल के बावजूद, लोग आगे बढ़ते रहते हैं।","quoteHe":"למרות הלב השבור, אנשים ממשיכים הלאה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=5kz28Hh9VVk","hiVideo":"https://www.youtube.com/watch?v=xRb8hxwN5zc"}
+"1":{"quoteEn":"Nature allows every person to cope with their fate.","quoteHi":"प्रकृति हर इंसान को अपने भाग्य का सामना करने की ताकत देती है।","quoteHe":"הטבע מאפשר לכל אדם להתמודד עם גורלו.","heVideo":"https://www.youtube.com/watch?v=zVi8AI9Yl6k","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%9E%D7%90%D7%9C%D7%94-%D7%95%D7%90%D7%91%D7%90%D7%9C%D7%94-imale-veabale-dear-mommy-dear-papa.html","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28","hiLyrics":"https://lyricstranslate.com/en/lag-ja-gale-embrace-me.html"},
+"2":{"quoteEn":"The best way to take revenge on an enemy is not to become like him.","quoteHi":"दुश्मन से बदला लेने का सबसे अच्छा तरीका है उस जैसा न बनना।","quoteHe":"הדרך הטובה ביותר להתנקם באויב היא לא להידמות לו.","heVideo":"https://www.youtube.com/watch?v=hySvIlHhCgA","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%99%D7%9F-%D7%99%D7%95%D7%AA%D7%A8-%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%A0%D7%99%D7%9D-ein-yoter-moadonim-no-more-clubbing.html","hiVideo":"https://www.youtube.com/watch?v=AMuRRXCuy-4","hiLyrics":"https://lyricstranslate.com/en/pal-pal-dil-ke-paas-every-moment-heart.html"},
+"16":{"quoteEn":"Optimism, a smile, and hope—how little is needed for us to be happy, and all of it is within us.","quoteHi":"आशावाद, एक मुस्कान और उम्मीद—खुश रहने के लिए कितना कम चाहिए, और यह सब हमारे अंदर ही है।","quoteHe":"אופטימיות, חיוך ותקווה; כמה מעט נחוץ בשביל שנהיה מאושרים, וכל זה נמצא בנו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=LWFEEsU-Y6M","hiVideo":"https://www.youtube.com/watch?v=vEe-UgJvUHE"}
 });
-window.GPC_SONGS_Q1 = window.SONGS_Q1;
+Object.keys(window.SONGS_Q1).forEach(function(k){var n=parseInt(k,10);if(!isNaN(n)){window.SONGS_Q1[('000'+n).slice(-3)]=window.SONGS_Q1[k];}});
+window.GPC_SONGS_Q1=window.SONGS_Q1;
