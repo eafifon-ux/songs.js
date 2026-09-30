@@ -1,4 +1,4 @@
-/* songs-all.js — the one file the blog loads (@main). Days live in this file. */
+/* songs-all.js — SINGLE file the blog loads. Includes days 051-070. */
 window.SONGS_Q1 = window.SONGS_Q1 || {};
 Object.assign(window.SONGS_Q1, {
 "51":{"quoteEn":"Wise men speak because they have something to say; fools because they have to say something.","quoteHi":"बुद्धिमान इसलिए बोलते हैं कि उनके पास कहने को कुछ है; मूर्ख इसलिए कि उन्हें कुछ कहना ही है।","quoteHe":"חכמים מדברים כי יש להם מה לומר; כסילים מדברים כי הם מוכרחים לומר משהו.","cite":"Plato","heVideo":"https://www.youtube.com/watch?v=HXz70eAaiMA","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"},
@@ -21,8 +21,20 @@ Object.assign(window.SONGS_Q1, {
 "69":{"quoteEn":"The wisest have the most authority.","quoteHi":"सबसे बुद्धिमान के पास सबसे अधिक अधिकार होता है।","quoteHe":"לחכמים ביותר יש הסמכות הרבה ביותר.","cite":"Plato","heVideo":"https://www.youtube.com/watch?v=fZ26yiGviZA","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28"},
 "70":{"quoteEn":"Honesty is for the most part less profitable than dishonesty.","quoteHi":"ईमानदारी अक्सर बेईमानी से कम फायदेमंद रहती है।","quoteHe":"הכנות לפי רוב רווחית פחות מהיושר הישר.","cite":"Plato","heVideo":"https://www.youtube.com/watch?v=CMW0zhhV0yI","hiVideo":"https://www.youtube.com/watch?v=AMuRRXCuy-4"}
 });
-Object.keys(window.SONGS_Q1).forEach(function(k){var n=parseInt(k,10);if(!isNaN(n)){window.SONGS_Q1[('000'+n).slice(-3)]=window.SONGS_Q1[k];window.SONGS_Q1[String(n)]=window.SONGS_Q1[k];}});
-window.GPC_SONGS_Q1 = window.SONGS_Q1;
-window.GPC_SONGS = window.GPC_SONGS || {};
-Object.keys(window.SONGS_Q1).forEach(function(k){window.GPC_SONGS[k]=window.SONGS_Q1[k];});
-if (typeof window.GPCPaintSongs === 'function') window.GPCPaintSongs();
+(function(){
+  var src=window.SONGS_Q1;
+  Object.keys(src).forEach(function(k){
+    var n=parseInt(k,10); if(isNaN(n)) return;
+    var p=('000'+n).slice(-3);
+    src[p]=src[k]; src[String(n)]=src[k]; src[n]=src[k];
+  });
+  window.GPC_SONGS_Q1=src;
+  window.GPC_SONGS=window.GPC_SONGS||{};
+  window.SONGS=window.SONGS||{};
+  Object.keys(src).forEach(function(k){ window.GPC_SONGS[k]=src[k]; window.SONGS[k]=src[k]; });
+  function paint(){ if(typeof window.GPCPaintSongs==='function') window.GPCPaintSongs(); }
+  paint();
+  setTimeout(paint,300);
+  setTimeout(paint,1000);
+  setTimeout(paint,2500);
+})();
