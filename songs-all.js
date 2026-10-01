@@ -56,12 +56,22 @@
     root["004"] = d;
     root[4] = d;
   }
+  function apply005(root) {
+    if (!root) return;
+    var d = root["005"] || root[5] || {};
+    d.heLyricsEn = "Without you I am half mad.\nLet me breathe you in again for a minute.\nYou left me alone.";
+    d.hiLyricsEn = "Sometimes a thought comes to my heart\nthat you were made for me.\nBefore this, you lived somewhere among the stars.";
+    d.hiLyricsHi = "कभी कभी मेरे दिल में ख़याल आता है";
+    root["005"] = d;
+    root[5] = d;
+  }
   function patch() {
     [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
       apply001(root);
       apply002(root);
       apply003(root);
       apply004(root);
+      apply005(root);
       apply146(root);
       apply198(root);
     });
