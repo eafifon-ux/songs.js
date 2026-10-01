@@ -6,11 +6,31 @@
     d.quoteHi = "चिंता नकारात्मक लक्ष्य निर्धारण है।";
     d.quoteHe = "דאגה היא הגדרת יעדים שלילית.";
   }
+  function apply198(root) {
+    var d = root && (root["198"] || root[198]);
+    if (!d) {
+      d = {};
+      if (root) {
+        root["198"] = d;
+        root[198] = d;
+      } else {
+        return;
+      }
+    }
+    d.quoteEn = "It is better to create than to learn! Creation is the essence of life.";
+    d.quoteHi = "सीखने से बेहतर है कि आप कुछ रचें! सृजन जीवन का सार है।";
+    d.quoteHe = "עדיף ליצור מאשר ללמוד! היצירה היא מהות החיים.";
+    d.quoteBy = "Julius Caesar";
+  }
   function patch() {
     apply146(window.GPC_SONGS);
     apply146(window.SONGS);
     apply146(window.SONGS_Q1);
     apply146(window.SONGS_Q2);
+    apply198(window.GPC_SONGS);
+    apply198(window.SONGS);
+    apply198(window.SONGS_Q2);
+    apply198(window.SONGS_Q3);
     if (typeof window.GPCPaintSongs === "function") window.GPCPaintSongs();
   }
   var s = document.createElement("script");
