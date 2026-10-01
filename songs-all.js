@@ -283,8 +283,7 @@ var ALL={
 "361":{"quoteEn":"Eighty percent of success is showing up.","heVideo":"https://www.youtube.com/watch?v=gxBS52QbWwk","hiVideo":"https://open.spotify.com/track/0LT0APsnMlmcjpt2ZltCm2"},
 "362":{"quoteEn":"When I do good, I feel good. When I do evil, I feel bad. That is my religion.","heVideo":"https://www.youtube.com/watch?v=Cs0YajjYKmc","hiVideo":"https://open.spotify.com/track/6k3XXCE1ZzwevQlxf8dNaw"},
 "363":{"quoteEn":"Anti-Semites do not forgive Jews for having spirit and money.","heVideo":"https://www.youtube.com/watch?v=bXYdi89TZwU","hiVideo":"https://www.youtube.com/watch?v=R4YeD7aoOmU"},
-"364":{"quoteEn":"To achieve this year what you don’t have, you must do something you haven’t done.","heVideo":"https://www.youtube.com/watch?v=E9jRgSVkOF0","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"}
-};
+"364":{"quoteEn":"To achieve this year what you don’t have, you must do something you haven’t done.","heVideo":"https://www.youtube.com/watch?v=E9jRgSVkOF0","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw",
 "184":{"quoteEn":"The obstacle is the way.","quoteHi":"बाधा ही रास्ता है।","quoteHe":"המכשול הוא הדרך.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=ITzMQKr523Y","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"},
 "185":{"quoteEn":"You have power over your mind, not outside events.","quoteHi":"तुम्हारा वश मन पर है, बाहर की घटनाओं पर नहीं।","quoteHe":"יש לך שליטה על דעתך, לא על המאורעות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=qfxgip3SYlA","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28"},
 "186":{"quoteEn":"Waste no more time arguing what a good man should be. Be one.","quoteHi":"अच्छे आदमी की बहस में समय मत गँवाओ। बनो।","quoteHe":"אל תבזבז זמן על מהו אדם טוב. היה אחד.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=HHo9Vwi3iPo","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"},
@@ -312,7 +311,8 @@ var ALL={
 "210":{"quoteEn":"Do not be disgusted, discouraged, or dissatisfied if you do not succeed.","quoteHi":"सफल न हो तो घृणा, निराशा या असंतोष मत रखो।","quoteHe":"אל תיגעל, תתייאש או תתאכזב אם לא הצלחת.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=ITzMQKr523Y","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"},
 "211":{"quoteEn":"Think of yourself as dead. You have lived your life. Now take what's left and live it properly.","quoteHi":"अपने को मरा समझो। बचा हुआ जीवन ठीक से जियो।","quoteHe":"חשוב על עצמך כמת. עכשיו חיה נכון את מה שנותר.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=qfxgip3SYlA","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28"},
 "212":{"quoteEn":"The universe is change; our life is what our thoughts make it.","quoteHi":"ब्रह्मांड परिवर्तन है; जीवन हमारी सोच है।","quoteHe":"היקום הוא שינוי; חיינו הם מחשבותינו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=ITzMQKr523Y","hiVideo":"https://www.youtube.com/watch?v=oWKgpB2zpgw"},
-"213":{"quoteEn":"When you arise in the morning, think of what a privilege it is to be alive.","quoteHi":"सुबह उठकर सोचो जीवित होना कितना सौभाग्य है।","quoteHe":"כשתקום בבוקר, חשוב איזו זכות היא לחיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=qfxgip3SYlA","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28"},
+"213":{"quoteEn":"When you arise in the morning, think of what a privilege it is to be alive.","quoteHi":"सुबह उठकर सोचो जीवित होना कितना सौभाग्य है।","quoteHe":"כשתקום בבוקר, חשוב איזו זכות היא לחיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=qfxgip3SYlA","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28"}
+};
 Object.keys(ALL).forEach(function(k){
   var n=parseInt(k,10), p=('000'+n).slice(-3), d=ALL[k];
   var bag = n<=91 ? window.SONGS_Q1 : n<=182 ? window.SONGS_Q2 : n<=273 ? window.SONGS_Q3 : window.SONGS_Q4;
