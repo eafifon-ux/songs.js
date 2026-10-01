@@ -1,87 +1,24 @@
-/* songs-all.js — load last complete snapshot, then apply source overlays */
+/* songs-all.js — previous overlays, plus day 007 */
 (function () {
-  function apply146(root) {
-    var d = root && (root["146"] || root[146]);
-    if (!d) return;
-    d.quoteHi = "चिंता नकारात्मक लक्ष्य निर्धारण है।";
-    d.quoteHe = "דאגה היא הגדרת יעדים שלילית.";
+  function apply007(root) {
+    if (!root) return;
+    var d = root["007"] || root[7] || {};
+    d.heLyricsEn = "Never alone. There is one who understands when the heart is broken.";
+    d.hiLyricsEn = "It is a song of love, the flow of waves. Life is nothing else but our story.";
+    d.hiLyricsHi = "एक प्यार का नगमा है\nमौजों की रवानी है";
+    root["007"] = d;
+    root[7] = d;
   }
-  function apply198(root) {
-    var d = root && (root["198"] || root[198]);
-    if (!d) {
-      if (!root) return;
-      d = {};
-      root["198"] = d;
-      root[198] = d;
+  function tick(n) {
+    if (!window.GPC_SONGS && !window.SONGS) {
+      if (n < 40) return setTimeout(function () { tick(n + 1); }, 200);
+      return;
     }
-    d.quoteEn = "It is better to create than to learn! Creation is the essence of life.";
-    d.quoteHi = "सीखने से बेहतर है कि आप कुछ रचें! सृजन जीवन का सार है।";
-    d.quoteHe = "עדיף ליצור מאשר ללמוד! היצירה היא מהות החיים.";
-    d.cite = "Julius Caesar";
-    d.quoteBy = "Julius Caesar";
-    d.author = "Julius Caesar";
-  }
-  function apply001(root) {
-    if (!root) return;
-    var src = {"quoteEn":"Nature allows every person to cope with their fate.","quoteHi":"प्रकृति हर इंसान को अपने भाग्य का सामना करने की ताकत देती है।","quoteHe":"הטבע מאפשר לכל אדם להתמודד עם גורלו.","heVideo":"https://www.youtube.com/watch?v=zVi8AI9Yl6k","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%9E%D7%90%D7%9C%D7%94-%D7%95%D7%90%D7%91%D7%90%D7%9C%D7%94-imale-veabale-dear-mommy-dear-papa.html","heLyricsEn":"Dear Mommy, Dear Papa\nRomanians, Tunisians\nYemenites and Moroccans\nIt does not matter what the ethnic group is\nThose who come say thank you\nFrom Poland and from Caucasia\nTonight no one sits still\nAge does not matter at all\nThe main thing is the dance\nNo cash is needed here\nEveryone move your hips\nMillionaire and pauper\nWhat a great night\nDear Mommy, Dear Papa\nHow the place is filling up","heLyricsHe":"אמאל'ה ואבאל'ה\nרומנים טוניסאים\nתימנים ומרוקאים\nלא חשוב מה העדה\nמי שבא נאמר תודה\nמפולין ומקווקז\nהלילה אף אחד לא זז\nלא חשוב בכלל הגיל\nהעיקר זה התרגיל\nלא צריך כאן מזומן\nכולם תזיזו את האגן\nמיליונר וגם תפרן\nאיזה לילה פאנן\nאמאל'ה ואבאל'ה\nאיך המקום מתמלא","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28","hiLyrics":"https://lyricstranslate.com/en/lag-ja-gale-embrace-me.html","hiLyricsEn":"Embrace me, dear — who knows if this beautiful night will come again\nPerhaps we may never meet again in this life\nFate has given us these few moments\nLook at me up close, as much as you wish\nYour fate may never have this chance again\nCome closer — I will not return again and again\nLet me wrap my arms around you and cry\nMy eyes may never shed such a shower of love again\nEmbrace me, for this beautiful evening may not come again","hiLyricsHi":"लग जा गले कि फिर ये हसीं रात हो न हो\nशायद फिर इस जनम में मुलाकात हो न हो\nहमको मिली हैं आज ये घड़ियाँ नसीब से\nजी भर के देख लीजिये हमको क़रीब से\nफिर आपके नसीब में ये बात हो न हो\nपास आइये कि हम नहीं आएंगे बार-बार\nबाहें गले में डाल के हम रो लें ज़ार-ज़ार\nआँखों से फिर ये प्यार कि बरसात हो न हो\nलग जा गले कि फिर ये हसीं रात हो न हो"};
-    var d = root["001"] || root[1] || {};
-    for (var k in src) if (Object.prototype.hasOwnProperty.call(src, k)) d[k] = src[k];
-    root["001"] = d;
-    root[1] = d;
-  }
-  function apply002(root) {
-    if (!root) return;
-    var d = root["002"] || root[2] || {};
-    d.heLyricsEn = "You say, No more games.\nPacking a bagful of clothes and going back to your parents.\nNo more clubbing.";
-    d.hiLyricsEn = "Every moment you are close to my heart.\nYou say that life is a sweet thirst.";
-    d.hiLyricsHi = "पल पल दिल के पास तुम रहते हो";
-    root["002"] = d;
-    root[2] = d;
-  }
-  function apply003(root) {
-    if (!root) return;
-    var d = root["003"] || root[3] || {};
-    d.heLyricsEn = "What I asked for... that you tell me that you love me.\nDo you love me? Do you need me? Do you want me?";
-    d.hiLyricsEn = "I cannot live without you.\nIf you are not here, nothing else matters.\nWhat is this life without you?";
-    d.hiLyricsHi = "तेरे बिना जीना नही\nतू जो नही कुछ भी नही";
-    root["003"] = d;
-    root[3] = d;
-  }
-  function apply004(root) {
-    if (!root) return;
-    var d = root["004"] || root[4] || {};
-    d.heLyricsEn = "I came from the East.\nI traveled a long way.\nFor years I dreamed of a land — a beloved land.";
-    d.hiLyricsEn = "Now that you have stolen my heart, do not turn your eyes away, my love.\nAfter changing my life, do not change yourself.";
-    d.hiLyricsHi = "चुरा लिया है तुमने जो दिल को\nनज़र नहीं चुराना सनम";
-    root["004"] = d;
-    root[4] = d;
-  }
-  function apply005(root) {
-    if (!root) return;
-    var d = root["005"] || root[5] || {};
-    d.heLyricsEn = "Without you I am half mad.\nLet me breathe you in again for a minute.\nYou left me alone.";
-    d.hiLyricsEn = "Sometimes a thought comes to my heart\nthat you were made for me.\nBefore this, you lived somewhere among the stars.";
-    d.hiLyricsHi = "कभी कभी मेरे दिल में ख़याल आता है";
-    root["005"] = d;
-    root[5] = d;
-  }
-  function apply006(root) {
-    if (!root) return;
-    var d = root["006"] || root[6] || {};
-    d.heLyricsEn = "Hey mami, this is not allowed.\nIf they catch us, I am done.\nEveryone is dancing tonight.";
-    d.hiLyricsEn = "No Hindi lyrics link on this day.";
-    root["006"] = d;
-    root[6] = d;
-  }
-  function patch() {
-    [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
-      apply001(root); apply002(root); apply003(root); apply004(root); apply005(root); apply006(root);
-      apply146(root); apply198(root);
-    });
+    [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(apply007);
     if (typeof window.GPCPaintSongs === "function") window.GPCPaintSongs();
   }
   var s = document.createElement("script");
-  s.src = "https://cdn.jsdelivr.net/gh/eafifon-ux/songs.js@46fda45454884a70f3e7517a4774149a41b33990/songs-all.js";
-  s.onload = patch;
+  s.src = "https://cdn.jsdelivr.net/gh/eafifon-ux/songs.js@a76da794e980a319a6ab5197cb9a22153c3049d6/songs-all.js";
+  s.onload = function () { tick(0); };
   document.head.appendChild(s);
 })();
