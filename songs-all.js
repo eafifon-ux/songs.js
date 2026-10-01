@@ -1,24 +1,24 @@
-/* songs-all.js — prior overlays, plus day 009 */
+/* songs-all.js — prior overlays, plus day 010 */
 (function () {
-  function apply009(root) {
+  function apply010(root) {
     if (!root) return;
-    var d = root["009"] || root[9] || {};
-    d.heLyricsEn = "With you, and always with you at night. I want to love only you until morning shines on you.";
-    d.hiLyricsEn = "If we know each other, living would be easy. Do not look away. Tell me your name.";
-    d.hiLyricsHi = "जान पहचान हो\nजीना आसान हो";
-    root["009"] = d;
-    root[9] = d;
+    var d = root["010"] || root[10] || {};
+    d.heLyricsEn = "Dad, at night a moment slips in that no one hears. I feel you close and cannot touch you.";
+    d.hiLyricsEn = "This lively evening intoxicates me. A string pulls me toward you.";
+    d.hiLyricsHi = "ये शाम मस्तानी\nमदहोश किए जाए";
+    root["010"] = d;
+    root[10] = d;
   }
   function tick(n) {
     if (!window.GPC_SONGS && !window.SONGS) {
       if (n < 40) return setTimeout(function () { tick(n + 1); }, 200);
       return;
     }
-    [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(apply009);
+    [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(apply010);
     if (typeof window.GPCPaintSongs === "function") window.GPCPaintSongs();
   }
   var s = document.createElement("script");
-  s.src = "https://cdn.jsdelivr.net/gh/eafifon-ux/songs.js@f003dd29f23a1e42506ec1d67900fb64a754e9eb/songs-all.js";
+  s.src = "https://cdn.jsdelivr.net/gh/eafifon-ux/songs.js@0c75d3a5a70661702e04f606a4becef425cac37a/songs-all.js";
   s.onload = function () { tick(0); };
   document.head.appendChild(s);
 })();
