@@ -38,10 +38,20 @@
     root["002"] = d;
     root[2] = d;
   }
+  function apply003(root) {
+    if (!root) return;
+    var d = root["003"] || root[3] || {};
+    d.heLyricsEn = "What I asked for... that you tell me that you love me.\nDo you love me? Do you need me? Do you want me?";
+    d.hiLyricsEn = "I cannot live without you.\nIf you are not here, nothing else matters.\nWhat is this life without you?";
+    d.hiLyricsHi = "तेरे बिना जीना नही\nतू जो नही कुछ भी नही";
+    root["003"] = d;
+    root[3] = d;
+  }
   function patch() {
     [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
       apply001(root);
       apply002(root);
+      apply003(root);
       apply146(root);
       apply198(root);
     });
