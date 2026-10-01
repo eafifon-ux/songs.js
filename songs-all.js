@@ -9,28 +9,23 @@
   function apply198(root) {
     var d = root && (root["198"] || root[198]);
     if (!d) {
+      if (!root) return;
       d = {};
-      if (root) {
-        root["198"] = d;
-        root[198] = d;
-      } else {
-        return;
-      }
+      root["198"] = d;
+      root[198] = d;
     }
     d.quoteEn = "It is better to create than to learn! Creation is the essence of life.";
     d.quoteHi = "सीखने से बेहतर है कि आप कुछ रचें! सृजन जीवन का सार है।";
     d.quoteHe = "עדיף ליצור מאשר ללמוד! היצירה היא מהות החיים.";
+    d.cite = "Julius Caesar";
     d.quoteBy = "Julius Caesar";
+    d.author = "Julius Caesar";
   }
   function patch() {
-    apply146(window.GPC_SONGS);
-    apply146(window.SONGS);
-    apply146(window.SONGS_Q1);
-    apply146(window.SONGS_Q2);
-    apply198(window.GPC_SONGS);
-    apply198(window.SONGS);
-    apply198(window.SONGS_Q2);
-    apply198(window.SONGS_Q3);
+    [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
+      apply146(root);
+      apply198(root);
+    });
     if (typeof window.GPCPaintSongs === "function") window.GPCPaintSongs();
   }
   var s = document.createElement("script");
