@@ -65,15 +65,18 @@
     root["005"] = d;
     root[5] = d;
   }
+  function apply006(root) {
+    if (!root) return;
+    var d = root["006"] || root[6] || {};
+    d.heLyricsEn = "Hey mami, this is not allowed.\nIf they catch us, I am done.\nEveryone is dancing tonight.";
+    d.hiLyricsEn = "No Hindi lyrics link on this day.";
+    root["006"] = d;
+    root[6] = d;
+  }
   function patch() {
     [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
-      apply001(root);
-      apply002(root);
-      apply003(root);
-      apply004(root);
-      apply005(root);
-      apply146(root);
-      apply198(root);
+      apply001(root); apply002(root); apply003(root); apply004(root); apply005(root); apply006(root);
+      apply146(root); apply198(root);
     });
     if (typeof window.GPCPaintSongs === "function") window.GPCPaintSongs();
   }
