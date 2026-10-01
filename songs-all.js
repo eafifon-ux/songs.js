@@ -1,19 +1,46 @@
-/* songs-all.js — song data, then day 001 and 002 lyric text. No paint loop. */
+/* songs-all.js — forever @main. Hebrew lyric lines through day 040. */
 (function () {
+  var HE = {
+    1: "Dear Mommy, Dear Papa. Romanians, Tunisians, Yemenites and Moroccans. It does not matter which group you come from. The main thing is the dance.",
+    2: "You say, No more games. Packing a bag of clothes and going back to your parents. Your nights are too cold. No more clubbing.",
+    3: "What I asked for is that you tell me that you love me. Do you love me? Do you need me? Do you want me?",
+    4: "I came from the East. I traveled a long way. For years I dreamed of a land.",
+    5: "Without you I am half mad. Let me breathe you in again for a minute.",
+    6: "Hey mami, this is not allowed. If they catch us, I am done.",
+    7: "Never alone. There is one who understands when the heart is broken.",
+    8: "On the paths of Tel Aviv she looks for a place. She wants to fly to Mexico.",
+    9: "With you, and always with you at night. I want to love only you until morning shines on you.",
+    10: "Dad, at night a moment slips in that no one hears. I feel you close and cannot touch you.",
+    12: "For your sake I will suffer every day. I am not going anywhere.",
+    13: "You say all the time that in the end it falls apart. You do not see me the way I see you.",
+    14: "Your mother always says there is no one like you. I love you, and that is why I am with you.",
+    16: "Just do not break my heart. Hold me tight, then move on. I still love you.",
+    17: "A little girl in a big world. My heart is breaking, dear Father. Do not leave me.",
+    18: "Father in heaven, keep my soul. Do not let me fail, and do not let me fall.",
+    20: "Come give me a sign. I have no air left. Only you can come and mend this.",
+    32: "I do not care what they say about me. They are talking. What do they know about me?",
+    33: "Hang up. I want nothing from you. And you are still here.",
+    34: "By the sea I remember you. They say a closed door is not opened again.",
+    35: "At night you were always with me. Do not worry. I am here.",
+    36: "Some people climb mountains. I like being at home, with tea, lemon, and old books.",
+    37: "Let us sit and talk. I will not keep it in anymore. I miss you.",
+    38: "Mind commando dives into your thoughts. Do not compare me to anyone else.",
+    39: "Father, do not leave me. I am afraid now, so come and be with me.",
+    40: "How do I look? Like a million bucks."
+  };
   function apply(root) {
     if (!root) return false;
-    var a = root["001"] || root[1];
-    var b = root["002"] || root[2];
-    if (!a || !b) return false;
-    a.heLyricsEn = "Dear Mommy, Dear Papa.\nRomanians, Tunisians, Yemenites and Moroccans.\nIt does not matter which group you come from.\nWhoever comes, we say thank you.\nFrom Poland and from Caucasia, tonight no one sits still.\nAge does not matter. The main thing is the dance.\nNo cash is needed here. Everyone move your hips.\nMillionaire and pauper. What a great night.\nDear Mommy, Dear Papa. How the place is filling up.";
-    a.heLyricsHe = "אמאל'ה ואבאל'ה\nרומנים טוניסאים\nתימנים ומרוקאים\nלא חשוב מה העדה\nהעיקר זה התרגיל";
-    a.hiLyricsEn = "Embrace me, dear. Who knows if this beautiful night will come again.";
-    b.heLyricsEn = "You say, No more games.\nPacking a bag of clothes and going back to your parents.\nYour nights are too cold.\nNo more clubbing. Rounds all night long.";
-    b.heLyricsHe = "אין יותר מועדונים";
-    b.hiLyricsEn = "Every moment you are close to my heart. You say that life is a sweet thirst.";
-    b.hiLyricsHi = "पल पल दिल के पास तुम रहते हो";
-    root["001"] = a; root[1] = a; root["002"] = b; root[2] = b;
-    return true;
+    var hit = false;
+    Object.keys(HE).forEach(function (n) {
+      var key = String(n).padStart(3, "0");
+      var d = root[key] || root[Number(n)];
+      if (!d) return;
+      d.heLyricsEn = HE[n];
+      root[key] = d;
+      root[Number(n)] = d;
+      hit = true;
+    });
+    return hit;
   }
   function box(prefix) {
     var link = document.getElementById(prefix + "-lyrics");
