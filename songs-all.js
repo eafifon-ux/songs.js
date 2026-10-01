@@ -47,11 +47,21 @@
     root["003"] = d;
     root[3] = d;
   }
+  function apply004(root) {
+    if (!root) return;
+    var d = root["004"] || root[4] || {};
+    d.heLyricsEn = "I came from the East.\nI traveled a long way.\nFor years I dreamed of a land — a beloved land.";
+    d.hiLyricsEn = "Now that you have stolen my heart, do not turn your eyes away, my love.\nAfter changing my life, do not change yourself.";
+    d.hiLyricsHi = "चुरा लिया है तुमने जो दिल को\nनज़र नहीं चुराना सनम";
+    root["004"] = d;
+    root[4] = d;
+  }
   function patch() {
     [window.GPC_SONGS, window.SONGS, window.SONGS_Q1, window.SONGS_Q2, window.SONGS_Q3, window.SONGS_Q4].forEach(function (root) {
       apply001(root);
       apply002(root);
       apply003(root);
+      apply004(root);
       apply146(root);
       apply198(root);
     });
