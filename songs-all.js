@@ -8,8 +8,32 @@ window.GPC_SONGS=window.GPC_SONGS||{};
 window.SONGS=window.SONGS||{};
 (function(){
 var ALL={
-"001":{"hiLyricsEn":"Embrace me, this night may not come again.","hiLyricsHi":"लग जा गले, कि फिर ये हसीं रात हो न हो.","heLyricsEn":"Dear Mommy, dear Papa, how the place is filling up.","quoteEn":"Nature allows every person to cope with their fate.","quoteHi":"प्रकृति हर इंसान को अपने भाग्य का सामना करने की ताकत देती है।","quoteHe":"הטבע מאפשר לכל אדם להתמודד עם גורלו.","heVideo":"https://www.youtube.com/watch?v=zVi8AI9Yl6k","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%9E%D7%90%D7%9C%D7%94-%D7%95%D7%90%D7%91%D7%90%D7%9C%D7%94-imale-veabale-dear-mommy-dear-papa.html","hiLyrics":"https://lyricstranslate.com/en/lag-ja-gale-embrace-me.html"},
-"002":{"heLyricsEn":"No more clubbing. Rounds all night long.","heLyricsHe":"אין יותר מועדונים. סיבובים כל הלילה.","hiLyricsEn":"Every moment, you stay close to my heart.","hiLyricsHi":"पल पल दिल के पास तुम रहते हो.","quoteEn":"The best way to take revenge on an enemy is not to become like him.","quoteHi":"दुश्मन से बदला लेने का सबसे अच्छा तरीका है उस जैसा न बनना।","quoteHe":"הדרך הטובה ביותר להתנקם באויב היא לא להידמות לו.","heVideo":"https://www.youtube.com/watch?v=hySvIlHhCgA","hiVideo":"https://www.youtube.com/watch?v=AMuRRXCuy-4","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%99%D7%9F-%D7%99%D7%95%D7%AA%D7%A8-%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%A0%D7%99%D7%9D-ein-yoter-moadonim-no-more-clubbing.html","hiLyrics":"https://lyricstranslate.com/en/pal-pal-dil-ke-paas-every-moment-heart.html"},
+"001":{"hiLyricsEn":"Embrace me, dear.
+Who knows if this beautiful night will come again.
+Perhaps we may never meet again in this life.
+Stay close. This night may not return.","hiLyricsHi":"लग जा गले.
+कि फिर ये हसीं रात हो न हो.
+शायद इस जन्म में मिलना फिर हो न हो.
+पास रहो, यह रात फिर नहीं आएगी.","heLyricsEn":"Dear Mommy, dear Papa.
+Romanians, Tunisians, Yemenites and Moroccans.
+Whoever comes, we say thank you.
+The main thing is the dance.
+Dear Mommy, dear Papa, how the place is filling up.","quoteEn":"Nature allows every person to cope with their fate.","quoteHi":"प्रकृति हर इंसान को अपने भाग्य का सामना करने की ताकत देती है।","quoteHe":"הטבע מאפשר לכל אדם להתמודד עם גורלו.","heVideo":"https://www.youtube.com/watch?v=zVi8AI9Yl6k","hiVideo":"https://www.youtube.com/watch?v=y2fgw1Oqz28","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%9E%D7%90%D7%9C%D7%94-%D7%95%D7%90%D7%91%D7%90%D7%9C%D7%94-imale-veabale-dear-mommy-dear-papa.html","hiLyrics":"https://lyricstranslate.com/en/lag-ja-gale-embrace-me.html"},
+"002":{"heLyricsEn":"No more clubbing.
+You say, no more games.
+You pack a bag and go back to your parents.
+Your nights are too cold.
+No more clubbing. Rounds all night long.","heLyricsHe":"אין יותר מועדונים.
+את אומרת, אין יותר משחקים.
+אורזת תיק וחוזרת להורים.
+הלילות קרים מדי.
+אין יותר מועדונים. סיבובים כל הלילה.","hiLyricsEn":"Every moment you stay close to my heart.
+You say life is a sweet thirst.
+Stay near, do not go far.
+Night or morning, you are the one beside me.","hiLyricsHi":"पल पल दिल के पास तुम रहते हो.
+तुम कहती हो ज़िंदगी एक मीठी प्यास है.
+पास रहो, दूर मत जाओ.
+रात हो या सुबह, तुम ही पास हो.","quoteEn":"The best way to take revenge on an enemy is not to become like him.","quoteHi":"दुश्मन से बदला लेने का सबसे अच्छा तरीका है उस जैसा न बनना।","quoteHe":"הדרך הטובה ביותר להתנקם באויב היא לא להידמות לו.","heVideo":"https://www.youtube.com/watch?v=hySvIlHhCgA","hiVideo":"https://www.youtube.com/watch?v=AMuRRXCuy-4","heLyrics":"https://lyricstranslate.com/en/%D7%90%D7%99%D7%9F-%D7%99%D7%95%D7%AA%D7%A8-%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%A0%D7%99%D7%9D-ein-yoter-moadonim-no-more-clubbing.html","hiLyrics":"https://lyricstranslate.com/en/pal-pal-dil-ke-paas-every-moment-heart.html"},
 "003":{"heLyricsEn":"Do you love me (Do you, do you?)
 Do you need me (Do you, do you?)
 Do you want me (Do you, do you?)
@@ -23,23 +47,175 @@ Do-do you, do-do you, do-do you...","hiLyricsHi":"क्या तुम मु�
 क्या तुम्हें मेरी ज़रूरत है? (क्या, क्या?)
 क्या तुम मुझे चाहते हो? (क्या, क्या?)
 क्या, क्या, क्या...","quoteEn":"The consequences of anger are more serious than its causes.","quoteHi":"गुस्से के नतीजे उसके कारण से ज़्यादा ख़तरनाक होते हैं।","quoteHe":"תוצאות הכעס חמורות יותר מסיבותיו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=0D2yjGvcOCE","hiVideo":"https://www.youtube.com/watch?v=7W8IhwfEr0w","heLyrics":"https://lyricstranslate.com/en/do-you-love-me-do-you-love-me.html-0","hiLyrics":"https://lyricstranslate.com/en/kisi-ka-bhai-kisi-ki-tere-bina-english"},
-"004":{"heLyricsEn":"A beloved land.","heLyricsHe":"ארץ אהובה.","hiLyricsEn":"You have stolen my heart.","hiLyricsHi":"तुमने दिल चुरा लिया.","quoteEn":"He who lives in peace with himself lives in peace with the whole world.","quoteHi":"जो इंसान अपने आप के साथ शांति में रहता है, वह पूरी दुनिया के साथ भी शांति में रहता है।","quoteHe":"מי שחי בשלום עם עצמו, חי בשלום עם כל העולם.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=sViXJypEWSk","hiVideo":"https://www.youtube.com/watch?v=1eHJ3I_Re3g","hiLyrics":"https://lyricstranslate.com/en/chura-liya-hai-tumne-jo-dil-ko-now-you-have-stolen-my-heart.html"},
-"005":{"heLyricsEn":"Without you I am half mad.","heLyricsHe":"בלעדייך אני חצי משוגע.","hiLyricsEn":"Call me.","hiLyricsHi":"मुझे बुलाओ.","quoteEn":"Death smiles at us all; all we can do is smile back.","quoteHi":"मौत हम सब पर मुस्कुराती है; हम बस उसे वापस मुस्कुरा सकते हैं।","quoteHe":"המוות מחייך לכולנו, והדבר היחיד שניתן לעשות הוא לחייך אליו בחזרה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=LKUVZe1wPOI","hiVideo":"https://www.youtube.com/watch?v=-W2dagktUp0"},
-"006":{"heLyricsEn":"Hey mami, this is not allowed.","heLyricsHe":"היי מאמי, זה אסור.","hiLyricsEn":"I am still walking toward you.","hiLyricsHi":"मैं अब भी तुम्हारी तरफ चल रहा हूँ.","quoteEn":"One of the unique qualities of a human being is to love even those who have failed.","quoteHi":"मनुष्य की एक विशेषता यह है कि वह उन लोगों से भी प्रेम कर सकता है जो असफल हो गए हैं।","quoteHe":"אחת התכונות המיוחדות של האדם היא לאהוב גם את אלו שנכשלו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=RerzmNafv1s","hiVideo":"https://www.youtube.com/watch?v=l7GR1S-HNGo"},
-"007":{"heLyricsEn":"Never alone.","heLyricsHe":"אף פעם לא לבד.","hiLyricsEn":"I keep your voice in the room.","hiLyricsHi":"तुम्हारी आवाज़ कमरे में रहती है.","quoteEn":"One of the unique qualities of a human being is to love even those who have failed.","quoteHi":"मनुष्य की एक विशेषता यह है कि वह उन लोगों से भी प्रेम कर सकता है जो असफल हो गए हैं।","quoteHe":"אחת התכונות המיוחדות של האדם היא לאהוב גם את אלו שנכשלו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=dfw60OCIiYs","hiVideo":"https://open.spotify.com/track/6RELGnjAoxtO1IRYUcEcta","heLyrics":"https://lyricstranslate.com/en/af-paam-lo-levad-never-alone.html","hiLyrics":"https://lyricstranslate.com/en/mukesh-ek-pyar-ka-nagma-hai-lyrics.html"},
-"008":{"heLyricsEn":"She wants to fly.","heLyricsHe":"היא רוצה לעוף.","hiLyricsEn":"Come closer.","hiLyricsHi":"पास आओ.","quoteEn":"A person’s worth is measured by the things he devotes himself to.","quoteHi":"मनुष्य का मूल्य उन चीज़ों से मापा जाता है जिनमें वह अपना समय और प्रयास लगाता है।","quoteHe":"ערכו של אדם נמדד לפי הדברים שבהם הוא עוסק.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=73qEBj-yOXA","hiVideo":"https://www.youtube.com/watch?v=9JDSGhhiOwI"},
-"009":{"heLyricsEn":"With you, always with you.","heLyricsHe":"איתך, תמיד איתך.","hiLyricsEn":"Stay until morning.","hiLyricsHi":"सुबह तक रहो.","quoteEn":"Life is what our thoughts make it.","quoteHi":"जीवन वैसा ही होता है जैसा हमारी सोच उसे बना देती है।","quoteHe":"החיים הם מה שהמחשבות שלנו גורמות לנו להיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=Ii8t-XIw6aM","hiVideo":"https://www.youtube.com/watch?v=nOAsaehfPrk"},
-"010":{"heLyricsEn":"I feel you close and cannot touch you.","heLyricsHe":"אני מרגיש אותך קרוב ולא יכול לגעת.","hiLyricsEn":"I still set a place for you.","hiLyricsHi":"मैं अब भी तुम्हारे लिए जगह रखता हूँ.","quoteEn":"Do not waste time arguing about what a good man should be. Be one.","quoteHi":"यह मत बहस करो कि एक अच्छा इंसान क्या होता है। बस वैसा बनो।","quoteHe":"אל נא תתדיין בשאלה מהו אדם טוב, פשוט תהיה כזה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=TwHO5EwBg1U","hiVideo":"https://www.youtube.com/watch?v=lbfWsIpXsCA"},
-"011":{"heLyricsEn":"I am still waiting at the door.","heLyricsHe":"אני עדיין מחכה בדלת.","hiLyricsEn":"I kept a light on.","hiLyricsHi":"दिया जलाकर रखा.","quoteEn":"When you arise in the morning, think of what a privilege it is to be alive.","quoteHi":"जब तुम सुबह जागो, तो सोचो कि जीवित होना कितना बड़ा सौभाग्य है।","quoteHe":"כשתתעורר בבוקר, חשוב על הזכות שנפלה בחלקך לחיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=EI2joAy8D18","hiVideo":"https://www.youtube.com/watch?v=g0eO74UmRBs"},
-"012":{"heLyricsEn":"I am not going anywhere.","heLyricsHe":"אני לא הולך לשום מקום.","hiLyricsEn":"I will stay.","hiLyricsHi":"मैं रहूँगा.","quoteEn":"Do every act of your life as if it were your last.","quoteHi":"अपने जीवन का हर काम ऐसे करो जैसे वह तुम्हारा आख़िरी काम हो।","quoteHe":"עשה כל דבר בחייך כאילו הוא הדבר האחרון שתעשה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=RerzmNafv1s","hiVideo":"https://www.youtube.com/watch?v=qoq8B8ThgEM"},
-"013":{"heLyricsEn":"In the end it falls apart.","heLyricsHe":"בסוף הכול מתפרק.","hiLyricsEn":"I am still here.","hiLyricsHi":"मैं यहीं हूँ.","quoteEn":"Just because something seems difficult, do not think it is impossible.","quoteHi":"सिर्फ इसलिए कि कोई चीज़ तुम्हें कठिन लगती है, यह मत सोचो कि वह असंभव है।","quoteHe":"רק מפני שמשהו נראה לך קשה, אל תחשוב שהוא בלתי אפשרי.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=lgkKvOEo8q4","hiVideo":"https://www.youtube.com/watch?v=ovR_7R9I_vI"},
-"014":{"heLyricsEn":"There is no one like you.","heLyricsHe":"אין כמוך.","hiLyricsEn":"There is no one like you.","hiLyricsHi":"तुम्हारे जैसा कोई नहीं.","quoteEn":"The best way to predict the future is to create it!","quoteHi":"भविष्य की भविष्यवाणी करने का सबसे अच्छा तरीका है उसे खुद बनाना।","quoteHe":"הדרך הטובה ביותר לחזות את העתיד היא ליצור אותו!","cite":"Peter Drucker","heVideo":"https://www.youtube.com/watch?v=lLmXR0x6ckA"},
+"004":{"heLyricsEn":"I came from the East.
+I traveled a long way.
+For years I dreamed of a land.
+A beloved land.
+A beloved land.","heLyricsHe":"באתי מהמזרח.
+עברתי דרך ארוכה.
+שנים חלמתי על ארץ.
+ארץ אהובה.
+ארץ אהובה.","hiLyricsEn":"You have stolen my heart.
+I did not see it leave.
+I cannot ask for it back.
+You have stolen my heart.","hiLyricsHi":"तुमने दिल चुरा लिया.
+मैंने जाते नहीं देखा.
+वापस माँग नहीं सकती.
+तुमने दिल चुरा लिया.","quoteEn":"He who lives in peace with himself lives in peace with the whole world.","quoteHi":"जो इंसान अपने आप के साथ शांति में रहता है, वह पूरी दुनिया के साथ भी शांति में रहता है।","quoteHe":"מי שחי בשלום עם עצמו, חי בשלום עם כל העולם.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=sViXJypEWSk","hiVideo":"https://www.youtube.com/watch?v=1eHJ3I_Re3g","hiLyrics":"https://lyricstranslate.com/en/chura-liya-hai-tumne-jo-dil-ko-now-you-have-stolen-my-heart.html"},
+"005":{"heLyricsEn":"Without you I am half mad.
+Let me breathe you in again.
+You left me alone.
+Without you I am half mad.","heLyricsHe":"בלעדייך אני חצי משוגע.
+תני לי לנשום אותך עוד דקה.
+עזבת אותי לבד.
+בלעדייך אני חצי משוגע.","hiLyricsEn":"Call me.
+The night is long.
+Your name is the only light I have.
+Call me.","hiLyricsHi":"मुझे बुलाओ.
+रात लंबी है.
+तुम्हारा नाम ही रोशनी है.
+मुझे बुलाओ.","quoteEn":"Death smiles at us all; all we can do is smile back.","quoteHi":"मौत हम सब पर मुस्कुराती है; हम बस उसे वापस मुस्कुरा सकते हैं।","quoteHe":"המוות מחייך לכולנו, והדבר היחיד שניתן לעשות הוא לחייך אליו בחזרה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=LKUVZe1wPOI","hiVideo":"https://www.youtube.com/watch?v=-W2dagktUp0"},
+"006":{"heLyricsEn":"Hey mami, this is not allowed.
+If they catch us, I am done.
+Everyone is dancing tonight.
+Hey mami, this is not allowed.","heLyricsHe":"היי מאמי, זה אסור.
+אם יתפסו אותנו, נגמר לי.
+הלילה כולם רוקדים.
+היי מאמי, זה אסור.","hiLyricsEn":"The road is empty.
+I am still walking toward you.
+The road is empty.
+I am still walking toward you.","hiLyricsHi":"सड़क खाली है.
+मैं अब भी तुम्हारी तरफ चल रहा हूँ.
+सड़क खाली है.
+मैं अब भी तुम्हारी तरफ चल रहा हूँ.","quoteEn":"One of the unique qualities of a human being is to love even those who have failed.","quoteHi":"मनुष्य की एक विशेषता यह है कि वह उन लोगों से भी प्रेम कर सकता है जो असफल हो गए हैं।","quoteHe":"אחת התכונות המיוחדות של האדם היא לאהוב גם את אלו שנכשלו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=RerzmNafv1s","hiVideo":"https://www.youtube.com/watch?v=l7GR1S-HNGo"},
+"007":{"heLyricsEn":"Never alone.
+There is one who understands when the heart is broken.
+He holds my hand when I fall.
+Never alone.","heLyricsHe":"אף פעם לא לבד.
+יש מי שמבין כשהלב נשבר.
+הוא מחזיק לי את היד כשאני נופלת.
+אף פעם לא לבד.","hiLyricsEn":"I keep your voice in the room.
+After you leave, it is still here.
+I keep your voice in the room.","hiLyricsHi":"तुम्हारी आवाज़ कमरे में रहती है.
+तुम जाने के बाद भी यहीं है.
+तुम्हारी आवाज़ कमरे में रहती है.","quoteEn":"One of the unique qualities of a human being is to love even those who have failed.","quoteHi":"मनुष्य की एक विशेषता यह है कि वह उन लोगों से भी प्रेम कर सकता है जो असफल हो गए हैं।","quoteHe":"אחת התכונות המיוחדות של האדם היא לאהוב גם את אלו שנכשלו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=dfw60OCIiYs","hiVideo":"https://open.spotify.com/track/6RELGnjAoxtO1IRYUcEcta","heLyrics":"https://lyricstranslate.com/en/af-paam-lo-levad-never-alone.html","hiLyrics":"https://lyricstranslate.com/en/mukesh-ek-pyar-ka-nagma-hai-lyrics.html"},
+"008":{"heLyricsEn":"On the paths of Tel Aviv she looks for a place.
+Time calls her.
+She wants to fly.
+She wants to fly to Mexico.","heLyricsHe":"בשבילי תל אביב היא מחפשת מקום.
+הזמן קורא לה.
+היא רוצה לעוף.
+היא רוצה לעוף למקסיקו.","hiLyricsEn":"Come closer.
+The song only starts when you are here.
+Come closer.","hiLyricsHi":"पास आओ.
+गाना तभी शुरू होता है जब तुम यहाँ हो.
+पास आओ.","quoteEn":"A person’s worth is measured by the things he devotes himself to.","quoteHi":"मनुष्य का मूल्य उन चीज़ों से मापा जाता है जिनमें वह अपना समय और प्रयास लगाता है।","quoteHe":"ערכו של אדם נמדד לפי הדברים שבהם הוא עוסק.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=73qEBj-yOXA","hiVideo":"https://www.youtube.com/watch?v=9JDSGhhiOwI"},
+"009":{"heLyricsEn":"With you.
+Always with you at night.
+I want to love only you until morning.
+With you, always with you.","heLyricsHe":"איתך.
+תמיד איתך בלילה.
+אני רוצה לאהוב רק אותך עד הבוקר.
+איתך, תמיד איתך.","hiLyricsEn":"Stay until morning.
+I have nothing else to ask.
+Stay until morning.","hiLyricsHi":"सुबह तक रहो.
+मुझसे और कुछ नहीं माँगना.
+सुबह तक रहो.","quoteEn":"Life is what our thoughts make it.","quoteHi":"जीवन वैसा ही होता है जैसा हमारी सोच उसे बना देती है।","quoteHe":"החיים הם מה שהמחשבות שלנו גורמות לנו להיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=Ii8t-XIw6aM","hiVideo":"https://www.youtube.com/watch?v=nOAsaehfPrk"},
+"010":{"heLyricsEn":"Dad, at night a moment slips in that no one hears.
+I feel you close.
+I cannot touch you.
+I feel you close and cannot touch you.","heLyricsHe":"אבא, בלילה נכנס רגע שאף אחד לא שומע.
+אני מרגיש אותך קרוב.
+אני לא יכול לגעת.
+אני מרגיש אותך קרוב ולא יכול לגעת.","hiLyricsEn":"Father, the house is quiet.
+I still set a place for you.
+Father, the house is quiet.
+I still set a place for you.","hiLyricsHi":"पापा, घर शांत है.
+मैं अब भी तुम्हारे लिए जगह रखता हूँ.
+पापा, घर शांत है.
+मैं अब भी तुम्हारे लिए जगह रखता हूँ.","quoteEn":"Do not waste time arguing about what a good man should be. Be one.","quoteHi":"यह मत बहस करो कि एक अच्छा इंसान क्या होता है। बस वैसा बनो।","quoteHe":"אל נא תתדיין בשאלה מהו אדם טוב, פשוט תהיה כזה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=TwHO5EwBg1U","hiVideo":"https://www.youtube.com/watch?v=lbfWsIpXsCA"},
+"011":{"heLyricsEn":"The night is long.
+I am still waiting at the door.
+The night is long.
+I am still waiting at the door.","heLyricsHe":"הלילה ארוך.
+אני עדיין מחכה בדלת.
+הלילה ארוך.
+אני עדיין מחכה בדלת.","hiLyricsEn":"I kept a light on for you.
+I kept a light on for you.","hiLyricsHi":"मैंने तुम्हारे लिए दिया जलाकर रखा.
+मैंने तुम्हारे लिए दिया जलाकर रखा.","quoteEn":"When you arise in the morning, think of what a privilege it is to be alive.","quoteHi":"जब तुम सुबह जागो, तो सोचो कि जीवित होना कितना बड़ा सौभाग्य है।","quoteHe":"כשתתעורר בבוקר, חשוב על הזכות שנפלה בחלקך לחיות.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=EI2joAy8D18","hiVideo":"https://www.youtube.com/watch?v=g0eO74UmRBs"},
+"012":{"heLyricsEn":"For your sake I will suffer every day.
+I am not going anywhere.
+For your sake I will suffer every day.
+I am not going anywhere.","heLyricsHe":"בשבילך אסבול כל יום.
+אני לא הולך לשום מקום.
+בשבילך אסבול כל יום.
+אני לא הולך לשום מקום.","hiLyricsEn":"I will stay even when the road is hard.
+I will stay even when the road is hard.","hiLyricsHi":"रास्ता कठिन हो तो भी मैं रहूँगा.
+रास्ता कठिन हो तो भी मैं रहूँगा.","quoteEn":"Do every act of your life as if it were your last.","quoteHi":"अपने जीवन का हर काम ऐसे करो जैसे वह तुम्हारा आख़िरी काम हो।","quoteHe":"עשה כל דבר בחייך כאילו הוא הדבר האחרון שתעשה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=RerzmNafv1s","hiVideo":"https://www.youtube.com/watch?v=qoq8B8ThgEM"},
+"013":{"heLyricsEn":"You say that in the end it falls apart.
+You do not see me the way I see you.
+In the end it falls apart.","heLyricsHe":"אתה אומר שבסוף הכול מתפרק.
+אתה לא רואה אותי כמו שאני רואה אותך.
+בסוף הכול מתפרק.","hiLyricsEn":"You look away, and I am still here.
+You look away, and I am still here.","hiLyricsHi":"तुम नजर फेर लेते हो, और मैं यहीं हूँ.
+तुम नजर फेर लेते हो, और मैं यहीं हूँ.","quoteEn":"Just because something seems difficult, do not think it is impossible.","quoteHi":"सिर्फ इसलिए कि कोई चीज़ तुम्हें कठिन लगती है, यह मत सोचो कि वह असंभव है।","quoteHe":"רק מפני שמשהו נראה לך קשה, אל תחשוב שהוא בלתי אפשרי.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=lgkKvOEo8q4","hiVideo":"https://www.youtube.com/watch?v=ovR_7R9I_vI"},
+"014":{"heLyricsEn":"Your mother always says there is no one like you.
+I love you, and that is why I am with you.
+There is no one like you.","heLyricsHe":"אמא שלך תמיד אומרת שאין כמוך.
+אני אוהב אותך, ולכן אני איתך.
+אין כמוך.","hiLyricsEn":"There is no one like you.
+That is why I stay.
+There is no one like you.","hiLyricsHi":"तुम्हारे जैसा कोई नहीं.
+इसलिए मैं रहता हूँ.
+तुम्हारे जैसा कोई नहीं.","quoteEn":"The best way to predict the future is to create it!","quoteHi":"भविष्य की भविष्यवाणी करने का सबसे अच्छा तरीका है उसे खुद बनाना।","quoteHe":"הדרך הטובה ביותר לחזות את העתיד היא ליצור אותו!","cite":"Peter Drucker","heVideo":"https://www.youtube.com/watch?v=lLmXR0x6ckA"},
 "015":{"quoteEn":"Despite a broken heart, people keep going.","quoteHi":"टूटे हुए दिल के बावजूद, लोग आगे बढ़ते रहते हैं।","quoteHe":"למרות הלב השבור, אנשים ממשיכים הלאה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=5kz28Hh9VVk","hiVideo":"https://www.youtube.com/watch?v=xRb8hxwN5zc"},
-"016":{"heLyricsEn":"Do not break my heart.","heLyricsHe":"אל תשברי לי את הלב.","hiLyricsEn":"Do not break what is left.","hiLyricsHi":"जो बचा है, उसे मत तोड़ो.","quoteEn":"Optimism, a smile, and hope—how little is needed for us to be happy.","quoteHi":"आशावाद, एक मुस्कान और उम्मीद—खुश रहने के लिए कितना कम चाहिए।","quoteHe":"אופטימיות, חיוך ותקווה; כמה מעט נחוץ בשביל שנהיה מאושרים.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=LWFEEsU-Y6M","hiVideo":"https://www.youtube.com/watch?v=vEe-UgJvUHE","heLyrics":"https://lyricstranslate.com/en/al-tishberi-li-et-alev-dont-break-my-heart.html","hiLyrics":"https://lyricstranslate.com/en/raabta-raabta.html"},
-"017":{"heLyricsEn":"Do not leave me.","heLyricsHe":"אל תעזוב אותי.","hiLyricsEn":"Do not leave me.","hiLyricsHi":"मुझे मत छोड़ो.","quoteEn":"Observe how the plants, the ants, the birds, the spiders, and the bees all work together.","quoteHi":"देखो कैसे पौधे, चींटियाँ, पक्षी, मकड़ियाँ और मधुमक्खियाँ मिलकर काम करती हैं।","quoteHe":"ראה כיצד הצמחים, הנמלים, הציפורים, העכבישים והדבורים עובדים יחד.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=-jfHa5nCOzU","hiVideo":"https://open.spotify.com/track/6dFQ3W3xuG4ll7cNjIsN2Q","heLyrics":"https://lyricstranslate.com/en/aba-gadol-great-father.html","hiLyrics":"https://lyricstranslate.com/en/tujhe-dekha-tujhe-dekha-toh.html"},
-"018":{"heLyricsEn":"Do not let me fall.","heLyricsHe":"אל תיתן לי ליפול.","hiLyricsEn":"Do not let me fall.","hiLyricsHi":"गिरने मत दो.","quoteEn":"All decisions must be calculated.","quoteHi":"सभी निर्णय सोच-समझकर लिए जाने चाहिए।","quoteHe":"כל ההחלטות חייבים להיות מחושבות.","heVideo":"https://www.youtube.com/watch?v=NpAhYc_5-fs","hiVideo":"https://open.spotify.com/track/5w0Xpt2YHT2Y3z3e4UUJP7","heLyrics":"https://lyricstranslate.com/en/sarit-hadad-avi-shebeshamayim-lyrics.html","hiLyrics":"https://lyricstranslate.com/en/kaise-hua-how-did-it-happen.html-0"},
+"016":{"heLyricsEn":"Just do not break my heart.
+Hold me tight, then move on.
+I still love you.
+Just do not break my heart.","heLyricsHe":"רק אל תשברי לי את הלב.
+תחזיקי אותי חזק, ואז תמשיכי.
+אני עדיין אוהב אותך.
+רק אל תשברי לי את הלב.","hiLyricsEn":"Do not break what is left of me.
+Do not break what is left of me.","hiLyricsHi":"जो बचा है, उसे मत तोड़ो.
+जो बचा है, उसे मत तोड़ो.","quoteEn":"Optimism, a smile, and hope—how little is needed for us to be happy.","quoteHi":"आशावाद, एक मुस्कान और उम्मीद—खुश रहने के लिए कितना कम चाहिए।","quoteHe":"אופטימיות, חיוך ותקווה; כמה מעט נחוץ בשביל שנהיה מאושרים.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=LWFEEsU-Y6M","hiVideo":"https://www.youtube.com/watch?v=vEe-UgJvUHE","heLyrics":"https://lyricstranslate.com/en/al-tishberi-li-et-alev-dont-break-my-heart.html","hiLyrics":"https://lyricstranslate.com/en/raabta-raabta.html"},
+"017":{"heLyricsEn":"A little girl in a big world.
+My heart is breaking, dear Father.
+Do not leave me.
+Do not leave me.","heLyricsHe":"ילדה קטנה בעולם גדול.
+הלב נשבר, אבא יקר.
+אל תעזוב אותי.
+אל תעזוב אותי.","hiLyricsEn":"Father, the world is too big.
+Do not leave me.
+Father, the world is too big.
+Do not leave me.","hiLyricsHi":"पापा, दुनिया बहुत बड़ी है.
+मुझे मत छोड़ो.
+पापा, दुनिया बहुत बड़ी है.
+मुझे मत छोड़ो.","quoteEn":"Observe how the plants, the ants, the birds, the spiders, and the bees all work together.","quoteHi":"देखो कैसे पौधे, चींटियाँ, पक्षी, मकड़ियाँ और मधुमक्खियाँ मिलकर काम करती हैं।","quoteHe":"ראה כיצד הצמחים, הנמלים, הציפורים, העכבישים והדבורים עובדים יחד.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=-jfHa5nCOzU","hiVideo":"https://open.spotify.com/track/6dFQ3W3xuG4ll7cNjIsN2Q","heLyrics":"https://lyricstranslate.com/en/aba-gadol-great-father.html","hiLyrics":"https://lyricstranslate.com/en/tujhe-dekha-tujhe-dekha-toh.html"},
+"018":{"heLyricsEn":"Father in heaven, keep my soul.
+Do not let me fail.
+Do not let me fall.
+Do not let me fall.","heLyricsHe":"אבא שבשמיים, שמור על נשמתי.
+אל תיתן לי להיכשל.
+אל תיתן לי ליפול.
+אל תיתן לי ליפול.","hiLyricsEn":"Keep me standing.
+Do not let me fall.
+Keep me standing.
+Do not let me fall.","hiLyricsHi":"मुझे खड़ा रखो.
+गिरने मत दो.
+मुझे खड़ा रखो.
+गिरने मत दो.","quoteEn":"All decisions must be calculated.","quoteHi":"सभी निर्णय सोच-समझकर लिए जाने चाहिए।","quoteHe":"כל ההחלטות חייבים להיות מחושבות.","heVideo":"https://www.youtube.com/watch?v=NpAhYc_5-fs","hiVideo":"https://open.spotify.com/track/5w0Xpt2YHT2Y3z3e4UUJP7","heLyrics":"https://lyricstranslate.com/en/sarit-hadad-avi-shebeshamayim-lyrics.html","hiLyrics":"https://lyricstranslate.com/en/kaise-hua-how-did-it-happen.html-0"},
 "019":{"quoteEn":"If you want to go fast, go alone. If you want to go far, go together.","quoteHi":"अगर तुम तेज़ जाना चाहते हो तो अकेले जाओ। अगर तुम दूर तक पहुँचना चाहते हो तो साथ चलो।","quoteHe":"אם אתה רוצה ללכת מהר – לך לבד. אם אתה רוצה להגיע רחוק – לך ביחד.","heVideo":"https://www.youtube.com/watch?v=sViXJypEWSk","hiVideo":"https://open.spotify.com/track/4JME3WZOjQi6uQ0YToe4pr","heLyrics":"https://lyricstranslate.com/en/tikva-hope.html","hiLyrics":"https://lyricstranslate.com/en/nanha-munna-rahi-hoon.html-0"},
-"020":{"heLyricsEn":"Give me a sign.","heLyricsHe":"תן לי סימן.","hiLyricsEn":"Give me a sign.","hiLyricsHi":"कोई संकेत दो.","quoteEn":"Perform every act in your life as if it were your last, and you will find peace.","quoteHi":"अगर तुम अपने जीवन का हर काम ऐसे करो जैसे वह आख़िरी हो, तो तुम्हें शांति मिलेगी।","quoteHe":"אם תבצע את כל הפעולות בחייך כאילו הן האחרונות, תמצא מנוחה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=Pbz856Zrqn8","hiVideo":"https://www.youtube.com/watch?v=_RFUvHlW41A","heLyrics":"https://lyricstranslate.com/en/ten-li-siman-give-me-sign.html","hiLyrics":"https://lyricstranslate.com/en/khairiyat-importance.html"},
+"020":{"heLyricsEn":"Come give me a sign.
+I have no air left.
+Only you can come and mend this.
+Come give me a sign.","heLyricsHe":"בוא תן לי סימן.
+לא נשאר לי אוויר.
+רק אתה יכול לבוא ולתקן את זה.
+בוא תן לי סימן.","hiLyricsEn":"Give me a sign.
+I cannot breathe until you do.
+Give me a sign.","hiLyricsHi":"कोई संकेत दो.
+तब तक साँस नहीं चलती.
+कोई संकेत दो.","quoteEn":"Perform every act in your life as if it were your last, and you will find peace.","quoteHi":"अगर तुम अपने जीवन का हर काम ऐसे करो जैसे वह आख़िरी हो, तो तुम्हें शांति मिलेगी।","quoteHe":"אם תבצע את כל הפעולות בחייך כאילו הן האחרונות, תמצא מנוחה.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=Pbz856Zrqn8","hiVideo":"https://www.youtube.com/watch?v=_RFUvHlW41A","heLyrics":"https://lyricstranslate.com/en/ten-li-siman-give-me-sign.html","hiLyrics":"https://lyricstranslate.com/en/khairiyat-importance.html"},
 "021":{"quoteEn":"At any hour you choose, it is within your power to withdraw into yourself.","quoteHi":"जब भी तुम चाहो, एकांत में जा सकते हो।","quoteHe":"כל שעה שתחפוץ, בידך להתבודד.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=cLPFb305l44","hiVideo":"https://www.youtube.com/watch?v=cYOB941gyXI","heLyrics":"https://lyricstranslate.com/en/boom-boom.html-23","hiLyrics":"https://lyricstranslate.com/en/arijit-singh-hawayein-english"},
 "022":{"quoteEn":"We are all fleeting—the one who remembers and the one who is remembered.","quoteHi":"हम सब नश्वर हैं—याद करने वाला भी और जिसे याद किया जाता है वह भी।","quoteHe":"כולנו בני חלוף – הזוכר, ומושא זכרונו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=VT1R37o-d3I","hiVideo":"https://www.youtube.com/watch?v=M1mVWZKFcUw","heLyrics":"https://lyricstranslate.com/en/kakh-nolad-hatseva-thus-color-was-born.html","hiLyrics":"https://lyricstranslate.com/en/hindi-children-songs-nanha-munna-rahi-hoon-lyrics.html"},
 "023":{"quoteEn":"Nowhere can a person find a more peaceful refuge than in his own soul.","quoteHi":"कहीं भी मनुष्य को अपनी आत्मा से अधिक शांत आश्रय नहीं मिल सकता।","quoteHe":"בשום מקום לא יוכל האדם למצוא מקלט שליו יותר מאשר בנפשו.","cite":"Marcus Aurelius","heVideo":"https://www.youtube.com/watch?v=u95eSORTRDs","hiVideo":"https://www.youtube.com/watch?v=Umqb9KENgmk","heLyrics":"https://lyricstranslate.com/en/im-confused.html","hiLyrics":"https://lyricstranslate.com/en/tum-hi-ho-you-are.html"},
