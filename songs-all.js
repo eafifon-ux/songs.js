@@ -383,3 +383,97 @@ Object.keys(ALL).forEach(function(k){
 function paint(){ if(typeof window.GPCPaintSongs==='function') window.GPCPaintSongs(); }
 paint(); setTimeout(paint,400); setTimeout(paint,1500);
 })();
+
+/* Each language tab shows only that language. No cross-script fallback. */
+(function () {
+  if (window.__GPC_LANG_ONLY__) return;
+  window.__GPC_LANG_ONLY__ = true;
+
+  function pad(n) { return String(n).padStart(3, "0"); }
+  function dayData() {
+    var n = (typeof window.GPCCurrentDay === "function") ? window.GPCCurrentDay() : 1;
+    var bag = window.GPC_SONGS || {};
+    return bag[pad(n)] || bag[String(n)] || bag[n] || null;
+  }
+  function langNow() {
+    var btn = document.querySelector("#gpc-songs .lang-btn.active[data-lang]");
+    return (btn && btn.getAttribute("data-lang")) || "en";
+  }
+  function cardOf(titleId) {
+    var t = document.getElementById(titleId);
+    return t ? (t.closest(".music-card") || t.parentElement) : null;
+  }
+  var locking = false;
+  function apply() {
+    if (locking) return;
+    if (!document.getElementById("gpc-songs")) return;
+    locking = true;
+    try {
+      var lang = langNow();
+      var data = dayData() || {};
+      var quotes = { en: data.quoteEn || "", he: data.quoteHe || "", hi: data.quoteHi || "" };
+      ["en", "he", "hi"].forEach(function (code) {
+        var q = document.getElementById("quote-" + code);
+        if (q) q.textContent = quotes[code];
+      });
+      var heText = lang === "he" ? (data.heLyricsHe || "") : (lang === "en" ? (data.heLyricsEn || "") : "");
+      var hiText = lang === "hi" ? (data.hiLyricsHi || "") : (lang === "en" ? (data.hiLyricsEn || "") : "");
+      var heBody = document.getElementById("he-lyrics-en");
+      var hiBody = document.getElementById("hi-lyrics-en");
+      if (heBody) {
+        heBody.textContent = heText;
+        heBody.setAttribute("dir", /[\u0590-\u05FF]/.test(heText) ? "rtl" : "ltr");
+        heBody.style.display = heText ? "" : "none";
+      }
+      if (hiBody) {
+        hiBody.textContent = hiText;
+        hiBody.setAttribute("dir", "ltr");
+        hiBody.style.display = hiText ? "" : "none";
+      }
+      var heCard = cardOf("he-card-title");
+      var hiCard = cardOf("hi-card-title");
+      if (heCard) heCard.style.display = heText ? "" : "none";
+      if (hiCard) hiCard.style.display = hiText ? "" : "none";
+    } finally {
+      locking = false;
+    }
+  }
+  function hook() {
+    if (typeof window.GPCPaintSongs === "function" && !window.GPCPaintSongs.__langOnly) {
+      var orig = window.GPCPaintSongs;
+      var wrapped = function () {
+        var r = orig.apply(this, arguments);
+        apply();
+        return r;
+      };
+      wrapped.__langOnly = true;
+      window.GPCPaintSongs = wrapped;
+    }
+    if (typeof window.switchLang === "function" && !window.switchLang.__langOnly) {
+      var origSwitch = window.switchLang;
+      var wrappedSwitch = function (lang) {
+        var r = origSwitch.apply(this, arguments);
+        apply();
+        return r;
+      };
+      wrappedSwitch.__langOnly = true;
+      window.switchLang = wrappedSwitch;
+    }
+    apply();
+  }
+  hook();
+  window.addEventListener("hashchange", function () {
+    setTimeout(apply, 0);
+    setTimeout(apply, 80);
+  });
+  [400, 900, 1400, 2000, 3200, 3600].forEach(function (ms) { setTimeout(hook, ms); });
+  var root = document.getElementById("gpc-songs");
+  if (root && window.MutationObserver) {
+    var timer;
+    new MutationObserver(function () {
+      if (locking) return;
+      clearTimeout(timer);
+      timer = setTimeout(apply, 40);
+    }).observe(root, { subtree: true, childList: true, characterData: true });
+  }
+})();
