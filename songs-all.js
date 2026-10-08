@@ -418,8 +418,8 @@ paint(); setTimeout(paint,400); setTimeout(paint,1500);
       });
       // Both song cards follow the selected language tab.
       // English: English lyrics. Hebrew: Hebrew lyrics. Hindi: Hindi lyrics.
-      var heText = lang === "he" ? (data.heLyricsHe || "") : (lang === "hi" ? (data.heLyricsHi || "") : (data.heLyricsEn || ""));
-      var hiText = lang === "hi" ? (data.hiLyricsHi || "") : (lang === "he" ? (data.hiLyricsHe || "") : (data.hiLyricsEn || ""));
+      var heText = lang === "he" ? (data.heLyricsHe || data.heLyricsEn || data.heLyricsHi || "") : (lang === "hi" ? (data.heLyricsHi || data.heLyricsEn || data.heLyricsHe || "") : (data.heLyricsEn || data.heLyricsHe || data.heLyricsHi || ""));
+      var hiText = lang === "hi" ? (data.hiLyricsHi || data.hiLyricsEn || data.hiLyricsHe || "") : (lang === "he" ? (data.hiLyricsHe || data.hiLyricsHi || data.hiLyricsEn || "") : (data.hiLyricsEn || data.hiLyricsHi || data.hiLyricsHe || ""));
       var heBody = document.getElementById("he-lyrics-en");
       var hiBody = document.getElementById("hi-lyrics-en");
       if (heBody) {
@@ -434,8 +434,8 @@ paint(); setTimeout(paint,400); setTimeout(paint,1500);
       }
       var heCard = cardOf("he-card-title");
       var hiCard = cardOf("hi-card-title");
-      if (heCard) heCard.style.display = heText ? "" : "none";
-      if (hiCard) hiCard.style.display = hiText ? "" : "none";
+      if (heCard) heCard.style.display = (heText || data.heVideo || data.heLyrics) ? "" : "none";
+      if (hiCard) hiCard.style.display = (hiText || data.hiVideo || data.hiLyrics) ? "" : "none";
     } finally {
       locking = false;
     }
