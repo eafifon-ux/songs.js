@@ -416,10 +416,10 @@ paint(); setTimeout(paint,400); setTimeout(paint,1500);
         var q = document.getElementById("quote-" + code);
         if (q) q.textContent = quotes[code];
       });
-      // Song cards stay in their own language. English quotes stay English.
-      // Hebrew card is Hebrew. Hindi card is Hindi. No cross-language lyric fallback.
-      var heText = data.heLyricsHe || "";
-      var hiText = data.hiLyricsHi || "";
+      // Both song cards follow the selected language tab.
+      // English: English lyrics. Hebrew: Hebrew lyrics. Hindi: Hindi lyrics.
+      var heText = lang === "he" ? (data.heLyricsHe || "") : (lang === "hi" ? (data.heLyricsHi || "") : (data.heLyricsEn || ""));
+      var hiText = lang === "hi" ? (data.hiLyricsHi || "") : (lang === "he" ? (data.hiLyricsHe || "") : (data.hiLyricsEn || ""));
       var heBody = document.getElementById("he-lyrics-en");
       var hiBody = document.getElementById("hi-lyrics-en");
       if (heBody) {
@@ -429,7 +429,7 @@ paint(); setTimeout(paint,400); setTimeout(paint,1500);
       }
       if (hiBody) {
         hiBody.textContent = hiText;
-        hiBody.setAttribute("dir", "ltr");
+        hiBody.setAttribute("dir", /[\u0590-\u05FF]/.test(hiText) ? "rtl" : "ltr");
         hiBody.style.display = hiText ? "" : "none";
       }
       var heCard = cardOf("he-card-title");
